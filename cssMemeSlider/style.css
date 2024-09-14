@@ -1,3 +1,9 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .slider {}
 
 .meme {
@@ -15,26 +21,48 @@
 
 img {
 	height: 100%;
-	overflow: hidden;
 }
 
-.bottom {}
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
 .captions {}
 
-.controls {]
+.controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 5px;
+}
 
 input { display: none; }
 
 label {
 	cursor: pointer;
-}
-
-.dot {
 	width: 10px;
 	height: 10px;
-	border-radius:100%;
+	border-radius: 100%;
+	border-width: 1px;
+	border-color: #AAAAFF;
 	background: #AAAAFF;
+}
+
+label:checked {
+	border-color: #AAAAFF;
+	background: transparent;
+}
+
+label:not(:checked) + label:hover {
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+}
+
+label:checked + label:hover {
+	border-color: #FFFFFF;
+	background: transparent;
 }
 
 #dot_1:checked .meme_1 { display: block; }
