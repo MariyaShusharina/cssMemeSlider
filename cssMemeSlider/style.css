@@ -1,0 +1,50 @@
+.slider {}
+
+.meme {
+	display: none;
+	transition: 0.5s;
+}
+
+.meme_1 {}
+
+.meme_2 {}
+
+.meme_3 {}
+
+.meme_4 {}
+
+img {
+	height: 100%;
+	overflow: hidden;
+}
+
+.bottom {}
+
+.captions {}
+
+.controls {]
+
+input { display: none; }
+
+label {
+	cursor: pointer;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius:100%;
+	background: #AAAAFF;
+}
+
+#dot_1:checked .meme_1 { display: block; }
+#dot_1:not(:checked) .meme_1 { display: none; }
+
+#dot_2:checked .meme_2 { display: block; }
+#dot_2:not(:checked) .meme_2 { display: none; }
+
+#dot_3:checked .meme_3 { display: block; }
+#dot_3:not(:checked) .meme_3 { display: none; }
+
+#dot_4:checked .meme_4 { display: block; }
+#dot_4:not(:checked) .meme_4 { display: none; }
