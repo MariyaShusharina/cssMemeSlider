@@ -28,6 +28,7 @@ p, a {
 }
 
 .slider {
+	min-height: 70vh;
 	display: flex;
 	justify-content: center;
 }
@@ -51,16 +52,9 @@ img {
 .captions {}
 
 .caption {
-	display: none;
-	
-	animation-name: appear;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes appear {
-	from { display: none;}
-	to { display: block;}
+	max-height: 0;
+	max-width: 0;
+	transition: 0.5s;
 }
 
 .controls {
@@ -114,10 +108,10 @@ label:hover input {
 .main:has(#dot_4:checked) .meme_4 { max-height: 70vh; max-width: 100vw; }
 
 
-.main:has(#dot_1:checked) .caption_1 { display: block; }
+.main:has(#dot_1:checked) .caption_1 { max-height: 40vh; max-width: 70vw; }
 
-.main:has(#dot_2:checked) .caption_2 { display: block; }
+.main:has(#dot_2:checked) .caption_2 { max-height: 40vh; max-width: 70vw; }
 
-.main:has(#dot_3:checked) .caption_3 { display: block; }
+.main:has(#dot_3:checked) .caption_3 { max-height: 40vh; max-width: 70vw; }
 
-.main:has(#dot_4:checked) .caption_4 { display: block; }
+.main:has(#dot_4:checked) .caption_4 { max-height: 40vh; max-width: 70vw; }
