@@ -33,14 +33,15 @@ p, a {
 	justify-content: center;
 }
 
-.meme {}
-
-img {
+.meme {
 	max-height: 0;
 	max-width: 0;
-	object-fit: contain;
 	border-radius: 0.625em;
 	transition: 0.5s;
+}
+
+img {
+	object-fit: contain;
 }
 
 .bottom {
