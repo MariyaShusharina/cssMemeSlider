@@ -1,0 +1,159 @@
+@font-face {
+	font-family: century gothic;
+	src: url("./assets/CenturyGothic.ttf");
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	background-color: #333333;
+}
+
+p, a {
+	font-family: century gothic;
+	color: #FFFFFF;
+	transition: color 0.4s;
+}
+
+a:hover { color: #b4e0fb; }
+
+.main {
+	margin: 1.25em 2.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+}
+
+.slider {
+	min-height: 75vh;
+	display: flex;
+	justify-content: center;
+}
+
+.meme {
+	max-height: 0;
+	max-width: 0;
+	border-radius: 0.625em;
+	transition: 1s;
+}
+
+img {
+	object-fit: contain;
+}
+
+.bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.captions {}
+
+.caption {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.2s;
+}
+
+.caption_2, .caption_3, .caption_4 { margin-top: -3em;}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 0.125em;
+}
+
+input {
+	margin: 0.45em;
+	appearance: none;
+	width: 0.625em;
+	height: 0.625em;
+	border-radius: 100%;
+	border: 0.125em solid #66AAFF;
+	background: #66AAFF;
+}
+
+input:checked {
+	border-color: #66AAFF;
+	background: transparent !important;
+}
+
+input:active {
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+}
+
+label {
+	cursor: pointer;
+	width: 1.25em;
+	height: 1.25em;
+}
+
+label:hover input {
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+}
+
+.footer {
+	margin: 1.25em 2.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 1.25em;
+}
+
+.footer-logo {
+	max-width: 12em;
+	opacity: 1;
+	transition: opacity 0.4s;
+}
+
+.footer-logo:hover { opacity: 0.775; }
+
+
+.main:has(#dot_1:checked) .meme_1 { max-height: 70vh; max-width: 90vw; }
+
+.main:has(#dot_2:checked) .meme_2 { max-height: 70vh; max-width: 90vw; }
+
+.main:has(#dot_3:checked) .meme_3 { max-height: 70vh; max-width: 90vw; }
+
+.main:has(#dot_4:checked) .meme_4 { max-height: 70vh; max-width: 90vw; }
+
+
+.main:has(#dot_1:checked) .caption_1 { visibility: visible; opacity: 1; }
+
+.main:has(#dot_2:checked) .caption_2 { visibility: visible; opacity: 1; }
+
+.main:has(#dot_3:checked) .caption_3 { visibility: visible; opacity: 1; }
+
+.main:has(#dot_4:checked) .caption_4 { visibility: visible; opacity: 1; }
+
+
+@media screen and (max-width: 1024px) { }
+
+@media screen and (max-width: 600px) {
+	
+	.slider { min-height: 72vh; }
+	
+	.bottom {
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		gap: 1.25em;
+	}
+	
+	.controls {
+		justify-content: center;
+	}
+	
+	.footer-logo { width: 35vw; }
+}
+
+@media screen and (max-width: 500px) { }
