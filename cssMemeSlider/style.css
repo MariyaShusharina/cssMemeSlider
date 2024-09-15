@@ -58,7 +58,7 @@ img {
 	transition: opacity 1.2s;
 }
 
-.caption_2, .caption_3, .caption_4 { margin-top: -2em;}
+.caption_2, .caption_3, .caption_4 { margin-top: -3em;}
 
 .controls {
 	display: flex;
@@ -120,6 +120,8 @@ label:hover input {
 .main:has(#dot_4:checked) .caption_4 { visibility: visible; opacity: 1; }
 
 
+@media screen and (max-width: 1024px) { }
+
 @media screen and (max-width: 501px) {
 	
 	.slider { min-height: 60vh; }
@@ -127,7 +129,7 @@ label:hover input {
 	.bottom {
 		flex-direction: column-reverse;
 		justify-content: flex-start;
-		gap: gap: 1.25em;
+		gap: 1.25em;
 	}
 	
 	.controls {
@@ -136,3 +138,4 @@ label:hover input {
 	
 	.footer-logo { max-width: 35vw; }
 }
+
