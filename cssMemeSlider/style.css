@@ -5,6 +5,7 @@ body {
 p, a { color: #FFFFFF; }
 
 .main {
+	margin: 10px 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -49,7 +50,9 @@ img {
 	gap: 5px;
 }
 
-input {
+input { display: none; }
+
+.circle {
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;
@@ -64,14 +67,21 @@ label {
 	height: 20px;
 }
 
-label:checked input {
+label:checked .circle {
 	border-color: ##66AAFF;
 	background: transparent !important;
 }
 
-label:hover input {
+label:hover .circle {
 	border-color: #FFFFFF;
 	background: #FFFFFF;
+}
+
+.footer {
+	margin: 10px 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 
