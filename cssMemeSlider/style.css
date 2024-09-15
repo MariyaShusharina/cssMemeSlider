@@ -103,25 +103,19 @@ label:hover input {
 }
 
 
-#dot_1:checked .meme_1 { display: block; }
+.main:has(#dot_1:checked) .meme_1 { display: block; }
 
-#dot_2:checked .meme_2 { display: block; }
-#dot_2:not(:checked) .meme_2 { display: none; }
+.main:has(#dot_2:checked) .meme_2 { display: block; }
 
-#dot_3:checked .meme_3 { display: block; }
-#dot_3:not(:checked) .meme_3 { display: none; }
+.main:has(#dot_3:checked) .meme_3 { display: block; }
 
-#dot_4:checked .meme_4 { display: block; }
-#dot_4:not(:checked) .meme_4 { display: none; }
+.main:has(#dot_4:checked) .meme_4 { display: block; }
 
 
-#dot_1:checked .caption_1 { display: block; }
+.main:has(#dot_1:checked) .caption_1 { display: block; }
 
-#dot_2:checked .caption_2 { display: block; }
-#dot_2:not(:checked) .caption_2 { display: none; }
+.main:has(#dot_2:checked) .caption_2 { display: block; }
 
-#dot_3:checked .caption_3 { display: block; }
-#dot_3:not(:checked) .caption_3 { display: none; }
+.main:has(#dot_3:checked) .caption_3 { display: block; }
 
-#dot_4:checked .caption_4 { display: block; }
-#dot_4:not(:checked) .caption_4 { display: none; }
+.main:has(#dot_4:checked) .caption_4 { display: block; }
