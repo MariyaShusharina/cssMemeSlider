@@ -104,9 +104,12 @@ label:hover input {
 	align-items: flex-end;
 }
 
-.footer-logo { opacity: 1; }
+.footer-logo {
+	opacity: 1;
+	transition: opacity 0.4s;
+}
 
-.footer-logo:hover { opacity: 0.7; }
+.footer-logo:hover { opacity: 0.775; }
 
 
 .main:has(#dot_1:checked) .meme_1 { max-height: 70vh; max-width: 90vw; }
