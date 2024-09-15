@@ -85,6 +85,11 @@ input:checked {
 	background: transparent !important;
 }
 
+input:active {
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+}
+
 label {
 	cursor: pointer;
 	width: 1.25em;
@@ -132,7 +137,7 @@ label:hover input {
 
 @media screen and (max-width: 1024px) { }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 600px) {
 	
 	.slider { min-height: 72vh; }
 	
