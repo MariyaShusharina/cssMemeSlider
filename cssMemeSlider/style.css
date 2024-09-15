@@ -1,8 +1,24 @@
+@font-face {
+	font-family: century gothic;
+	src: url("./assets/CenturyGothic.ttf");
+}
+
 body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
 	background-color: #333333;
 }
 
-p, a { color: #FFFFFF; }
+p, a {
+	font-family: century gothic;
+	color: #FFFFFF;
+}
 
 .main {
 	margin: 10px 20px;
@@ -27,7 +43,8 @@ p, a { color: #FFFFFF; }
 .meme_4 {}
 
 img {
-	height: 100%;
+	max-height: 70vh;
+	object-fit: contain;
 }
 
 .bottom {
@@ -50,15 +67,19 @@ img {
 	gap: 5px;
 }
 
-input { display: none; }
-
-.circle {
+input {
+	appearance: none;
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;
 	border-width: 1px;
-	border-color: ##66AAFF;
-	background: ##66AAFF;
+	border-color: #66AAFF;
+	background: #66AAFF;
+}
+
+input:checked {
+	border-color: #66AAFF;
+	background: transparent !important;
 }
 
 label {
@@ -67,12 +88,7 @@ label {
 	height: 20px;
 }
 
-label:checked .circle {
-	border-color: ##66AAFF;
-	background: transparent !important;
-}
-
-label:hover .circle {
+label:hover input {
 	border-color: #FFFFFF;
 	background: #FFFFFF;
 }
