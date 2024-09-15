@@ -32,18 +32,14 @@ p, a {
 	justify-content: center;
 }
 
-.meme {
-	display: none;
-	
-	animation-name: appear;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
+.meme {}
 
 img {
-	max-height: 70vh;
+	max-height: 0;
+	max-width: 0;
 	object-fit: contain;
-	border-radius; 0.625em;
+	border-radius: 0.625em;
+	transition: 0.5s;
 }
 
 .bottom {
@@ -75,6 +71,7 @@ img {
 }
 
 input {
+	margin: 0.45em;
 	appearance: none;
 	width: 0.625em;
 	height: 0.625em;
@@ -108,13 +105,13 @@ label:hover input {
 }
 
 
-.main:has(#dot_1:checked) .meme_1 { display: block; }
+.main:has(#dot_1:checked) .meme_1 { max-height: 70vh; max-width: 100vw; }
 
-.main:has(#dot_2:checked) .meme_2 { display: block; }
+.main:has(#dot_2:checked) .meme_2 { max-height: 70vh; max-width: 100vw; }
 
-.main:has(#dot_3:checked) .meme_3 { display: block; }
+.main:has(#dot_3:checked) .meme_3 { max-height: 70vh; max-width: 100vw; }
 
-.main:has(#dot_4:checked) .meme_4 { display: block; }
+.main:has(#dot_4:checked) .meme_4 { max-height: 70vh; max-width: 100vw; }
 
 
 .main:has(#dot_1:checked) .caption_1 { display: block; }
