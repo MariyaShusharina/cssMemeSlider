@@ -27,7 +27,10 @@ p, a {
 	gap: 20px;
 }
 
-.slider {}
+.slider {
+	display: flex;
+	justify-content: center;
+}
 
 .meme {
 	display: none;
@@ -72,8 +75,7 @@ input {
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;
-	border-width: 1px;
-	border-color: #66AAFF;
+	border: 1px solid #66AAFF;
 	background: #66AAFF;
 }
 
@@ -102,7 +104,6 @@ label:hover input {
 
 
 #dot_1:checked .meme_1 { display: block; }
-#dot_1:not(:checked) .meme_1 { display: none; }
 
 #dot_2:checked .meme_2 { display: block; }
 #dot_2:not(:checked) .meme_2 { display: none; }
@@ -115,7 +116,6 @@ label:hover input {
 
 
 #dot_1:checked .caption_1 { display: block; }
-#dot_1:not(:checked) .caption_1 { display: none; }
 
 #dot_2:checked .caption_2 { display: block; }
 #dot_2:not(:checked) .caption_2 { display: none; }
