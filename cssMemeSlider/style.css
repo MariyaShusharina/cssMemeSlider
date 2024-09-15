@@ -34,16 +34,11 @@ p, a {
 
 .meme {
 	display: none;
-	transition: 0.5s;
+	
+	animation-name: appear;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 }
-
-.meme_1 {}
-
-.meme_2 {}
-
-.meme_3 {}
-
-.meme_4 {}
 
 img {
 	max-height: 70vh;
@@ -61,7 +56,15 @@ img {
 
 .caption {
 	display: none;
-	transition: 0.5s;
+	
+	animation-name: appear;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+	from { display: none;}
+	to { display: block;}
 }
 
 .controls {
@@ -97,7 +100,7 @@ label:hover input {
 }
 
 .footer {
-	margin: 10px 20px;
+	margin: 1.25em 2.5em;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
