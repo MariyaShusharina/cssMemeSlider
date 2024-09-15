@@ -154,3 +154,4 @@ label:hover input {
 	.footer-logo { max-width: 35vw; }
 }
 
+@media screen and (max-width: 500px) { }
