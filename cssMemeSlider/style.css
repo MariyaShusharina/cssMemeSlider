@@ -18,7 +18,7 @@ body {
 p, a {
 	font-family: century gothic;
 	color: #FFFFFF;
-	transition: color 0.5s;
+	transition: color 0.4s;
 }
 
 a:hover { color: #b4e0fb; }
@@ -103,6 +103,10 @@ label:hover input {
 	justify-content: space-between;
 	align-items: flex-end;
 }
+
+.footer-logo { opacity: 1; }
+
+.footer-logo:hover { opacity: 0.7; }
 
 
 .main:has(#dot_1:checked) .meme_1 { max-height: 70vh; max-width: 90vw; }
