@@ -37,7 +37,7 @@ p, a {
 	max-height: 0;
 	max-width: 0;
 	border-radius: 0.625em;
-	transition: 0.5s;
+	transition: 1s;
 }
 
 img {
@@ -55,8 +55,10 @@ img {
 .caption {
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.5s;
+	transition: opacity 1.2s;
 }
+
+.caption_2, .caption_3, .caption_4 { margin-top: -2em;}
 
 .controls {
 	display: flex;
